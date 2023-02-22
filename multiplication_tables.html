@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    let num = 9;
+    let mult_num = 13;
+    let mult = new Array(num);
+    let i, str;
+    let title = document.createElement("h1");
+
+    title.textContent = "구구단 " + mult_num + "단";
+    root.appendChild(title);
+
+    for(i = 0; i < num; i++){
+      str = mult_num + " + " + (i+1) + " = ";
+      mult[i] = str + mult_num * (i+1);
+      //console.log(mult[i]);
+    }
+
+    for(i = 0; i < num; i++){
+      let re = document.createElement("div");
+      re.textContent = mult[i];
+      root.appendChild(re);
+    }
+  </script>
+
+</body>
+</html>
