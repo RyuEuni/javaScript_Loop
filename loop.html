@@ -11,11 +11,15 @@
   <script>
     let poketmon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란"];
 
-    let root = window.document.getElementById("root"); //window는 최상위 객체 root이다. 그러면서 생략가능하게 만들어졌다.
-    let root2 = window["document"]["getElementById"]("root");
-    console.log(root2);
-    console.dir(window);
+    let root = window.document.getElementById("root");
 
+    for(let index = 0; // i라는 변수를 선언해줌과 동시에 0으로 할당해줬다.
+      index < 10; // <는 비교 연산자, i의 숫자가 10보다 작다면 
+      index = index+1 // i에 +1을 해준다.
+      )
+      {
+      //이는 절차형에 해당. -> 절차형 프로그래밍
+    }
   </script>
 </body>
 </html>
