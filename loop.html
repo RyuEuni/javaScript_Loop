@@ -25,6 +25,15 @@
 
     console.dir(st);
     
+    for(let i = 0; i < student.length; i++) {
+      // 반복문 for문이 실행할 코드 
+      let li = document.createElement("li");
+      li.textContent = student[i];
+      li.style.backgroundColor = "lightblue";
+      root.appendChild(li);
+      //
+    }
+    
   </script>
 </body>
 </html>
